@@ -1,3 +1,71 @@
-* {
+// Copyright 2022 nicolaswalcker
+// 
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+// 
+//     http://www.apache.org/licenses/LICENSE-2.0
+// 
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
   font-family: $font-family;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#__nuxt {
+  position: relative;
+}
+
+* {
+  transition-delay: 0 !important;
+}
+
+.section {
+  min-height: calc(100vh - calc(4.6875rem + 3.125rem));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+  padding-bottom: 1rem;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 0 1.75rem;
+    gap: 2rem;
+    max-height: 100%;
+    height: auto;
+
+    @include breakpoint(medium-up) {
+      width: 60%;
+    }
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.5s ease-in;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
