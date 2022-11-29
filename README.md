@@ -43,6 +43,9 @@ Projeto criado para ser meu portfólio pessoal.
 - [x] - Responsividade;
 - [x] - Home;
 - [x] - Sobre;
+- [ ] - Trabalhar no SEO;
+- [ ] - Adicionar um favicon;
+- [ ] - Adicionar um domínio;
 - [ ] - Projetos;
 - [ ] - Blog (com CMS);
 - [ ] - Contato;
