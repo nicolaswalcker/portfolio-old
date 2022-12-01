@@ -34,6 +34,13 @@ export default defineNuxtConfig({
           href: '/public/favicon.ico',
         },
       ],
+      meta: [
+        {
+          name: 'keywords',
+          content:
+            'nuxt, vue, typescript, nicolas, walcker, nicolas walcker, web, sites, desenvolvimento, frontend, portfólio',
+        },
+      ],
     },
     pageTransition: { name: 'fade', mode: 'out-in' },
   },

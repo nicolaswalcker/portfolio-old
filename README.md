@@ -44,7 +44,7 @@ Projeto criado para ser meu portfólio pessoal.
 - [x] - Home;
 - [x] - Sobre;
 - [ ] - Trabalhar no SEO;
-- [ ] - Utilizar fontes e fontes de ícones localmente;
+- [x] - Utilizar fontes e fontes de ícones localmente;
 - [x] - Adicionar um favicon;
 - [ ] - Adicionar um domínio;
 - [ ] - Projetos;
