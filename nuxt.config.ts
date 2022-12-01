@@ -12,6 +12,7 @@ export default defineNuxtConfig({
           @import "@/assets/scss/_colors.scss";
           @import "@/assets/scss/_reset.scss";
           @import "@/assets/scss/_transitions.scss";
+          @import "@/assets/fonts/switzer/_switzer.scss";
           `,
         },
       },
@@ -25,12 +26,19 @@ export default defineNuxtConfig({
       link: [
         {
           rel: 'stylesheet',
-          href: 'https://api.fontshare.com/v2/css?f[]=switzer@600,800,900,100,700,400,200,300,500&display=swap',
-          prefetch: 'true',
+          href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,500,0,0',
         },
         {
-          rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,500,0,0',
+          rel: 'icon',
+          type: 'image/x-icon',
+          href: '/public/favicon.ico',
+        },
+      ],
+      meta: [
+        {
+          name: 'keywords',
+          content:
+            'nuxt, vue, typescript, nicolas, walcker, nicolas walcker, web, sites, desenvolvimento, frontend, portfólio',
         },
       ],
     },

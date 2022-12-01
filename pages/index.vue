@@ -5,7 +5,7 @@ useHead({
     {
       hid: 'description',
       name: 'description',
-      content: 'Home page',
+      content: 'Me chamo Nicolas e sou desenvolvedor frontend.',
     },
   ],
 });

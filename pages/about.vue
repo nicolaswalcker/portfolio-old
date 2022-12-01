@@ -19,7 +19,7 @@
               Tenho 23 anos, atualmente cursando Ciência da Computação pela
               Universidade Federal do Espírito Santo. Sou Desenvolvedor
               Front-end e também gosto muito de estudar sobre a área de UX/UI
-              Design.Atualmente atuo na
+              Design. Atualmente atuo na
               <a
                 class="content__bio__external"
                 href="https://upcities.app/"
@@ -91,7 +91,8 @@ useHead({
     {
       hid: 'description',
       name: 'description',
-      content: 'Sobre mim',
+      content:
+        'Tenho 23 anos, atualmente cursando Ciência da Computação pela Universidade Federal do Espírito Santo.',
     },
   ],
 });
