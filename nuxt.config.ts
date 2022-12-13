@@ -26,19 +26,19 @@ export default defineNuxtConfig({
       link: [
         {
           rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,500,0,0',
+          href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,500,0,0&display=swap',
         },
         {
           rel: 'icon',
           type: 'image/x-icon',
-          href: '/public/favicon.ico',
+          href: './public/favicon.ico',
         },
       ],
       meta: [
         {
           name: 'keywords',
           content:
-            'nuxt, vue, typescript, nicolas, walcker, nicolas walcker, web, sites, desenvolvimento, frontend, portfólio',
+            'nuxt, vue, typescript, nicolas, walcker, nicolas walcker, web, sites, desenvolvimento, frontend, portfólio, nicolaswalcker',
         },
       ],
     },

@@ -33,6 +33,7 @@
     "sass-loader": "^13.2.0"
   },
   "dependencies": {
+    "unstorage": "^1.0.1",
     "vue3-simple-icons": "^7.18.0"
   }
 }
