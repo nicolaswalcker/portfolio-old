@@ -29,9 +29,9 @@ export default defineNuxtConfig({
           href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,500,0,0&display=swap',
         },
         {
-          rel: 'icon',
+          rel: 'shortcut icon',
           type: 'image/x-icon',
-          href: './public/favicon.ico',
+          href: 'https://raw.githubusercontent.com/nicolaswalcker/portfolio3/main/public/favicon.ico',
         },
       ],
       meta: [
