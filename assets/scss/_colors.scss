@@ -1,16 +1,20 @@
-#main[data-theme='dark'] {
-  --color-primary: #000;
-  --color-secondary: #eaeaea;
-  --color-tertiary: #fff;
-  --color-gradient: linear-gradient(225.34deg, #ffffff 0%, #ffff7f 101.17%),
-    #ffffff;
-  transition: all ease 0.3s;
-}
 
-#main[data-theme='light'] {
+:root {
   --color-primary: #fff;
   --color-secondary: #212121;
   --color-tertiary: #000;
   --color-gradient: linear-gradient(225.34deg, #ff7fff 0%, #dbff7f 101.17%);
-  transition: all ease 0.3s;
+}
+
+:root.dark {
+  --color-primary: #000;
+  --color-secondary: #eaeaea;
+  --color-tertiary: #fff;
+  --color-gradient: linear-gradient(225.34deg, #ffffff 0%, #ffff7f 101.17%);
+}
+
+.main {
+  /* background: var(--color-primary);
+  color: var(--color-secondary); */
+  transition: all ease-in 0.3s;
 }

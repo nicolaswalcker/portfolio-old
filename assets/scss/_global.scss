@@ -46,9 +46,33 @@ a {
   }
 }
 
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  background-image: var(--color-gradient);
+  transition: all ease 0.3s;
+  text-decoration: none;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &-text {
+    color: var(--color-primary);
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-weight: 700;
+    transition: all ease 0.3s;
+  }
+  
+}
+
 .fade-enter-active,
 .fade-leave-active {
-  transition: all 0.5s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .fade-enter-from,

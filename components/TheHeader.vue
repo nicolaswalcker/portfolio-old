@@ -1,23 +1,20 @@
 <script setup lang="ts">
-import { Theme, ThemeIcon } from '~/interfaces/themeEnum';
-const theme = ref<Theme>(Theme.LIGHT);
+import { ThemeIcon } from '~/interfaces/themeEnum';
+const isDark = useDark();
+const toggleTheme = useToggle(isDark);
+const themeIcon = ref(ThemeIcon.SUN);
 
-const themeIcon = computed(() => {
-  return theme.value === Theme.LIGHT ? ThemeIcon.SUN : ThemeIcon.MOON;
+onMounted(() => {
+  updateIcon();
 });
 
-const toggleTheme = () => {
-  theme.value = theme.value === Theme.LIGHT ? Theme.DARK : Theme.LIGHT;
-
-  const main = document.getElementById('main');
-
-  if (main) {
-    main.setAttribute(
-      'data-theme',
-      theme.value === Theme.LIGHT ? Theme.LIGHT : Theme.DARK
-    );
-  }
+const updateIcon = () => {
+  themeIcon.value = isDark.value ? ThemeIcon.SUN : ThemeIcon.MOON;
 };
+
+watch(isDark, () => {
+  updateIcon();
+});
 </script>
 <template>
   <header class="header">
@@ -40,7 +37,7 @@ const toggleTheme = () => {
           <NuxtLink class="navigation__item-content" to="/blog">Blog</NuxtLink>
         </li>
         <li class="navigation__item">
-          <button @click="toggleTheme" class="navigation__item-icon">
+          <button @click="toggleTheme()" class="navigation__item-icon">
             <span v-html="themeIcon" class="material-symbols-rounded"></span>
           </button>
         </li>
