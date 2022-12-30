@@ -20,8 +20,8 @@ useHead({
           Desenvolvedor Front-end
         </p>
       </div>
-      <NuxtLink to="/about" class="section__content__button">
-        <span class="section__content__button-text">Sobre mim</span>
+      <NuxtLink to="/about" class="button">
+        <span class="button-text">Sobre mim</span>
       </NuxtLink>
     </article>
   </section>
@@ -48,29 +48,6 @@ useHead({
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-      }
-    }
-
-    &__button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-      padding: 1rem 2rem;
-      width: clamp(150px, 25vw, 200px);
-      border-radius: 0.5rem;
-      background: var(--color-gradient);
-      transition: all 0.3s ease-in-out;
-      text-decoration: none;
-
-      &:hover {
-        transform: scale(1.05);
-      }
-
-      &-text {
-        color: var(--color-primary);
-        font-size: clamp(1rem, 2.5vw, 1.5rem);
-        font-weight: 700;
       }
     }
   }

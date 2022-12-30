@@ -24,12 +24,14 @@ onMounted(() => {
 </script>
 
 <template>
-  <div id="main" class="main" data-theme="light">
+  <div class="main">
     <NuxtLayout>
       <MouseBlob />
-      <transition name="fade" mode="out-in">
-        <RouterView />
-      </transition>
+      <router-view v-slot="{Component}">
+        <transition name="fade" mode="out-in">
+          <component :is="Component" />
+        </transition>
+      </router-view>
     </NuxtLayout>
   </div>
 </template>
