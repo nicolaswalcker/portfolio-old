@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "@types/markdown-it": "^12.2.3",
     "@vueuse/core": "^9.6.0",
     "@vueuse/nuxt": "^9.6.0",
     "cz-conventional-changelog": "^3.3.0",
@@ -33,7 +34,9 @@
     "sass-loader": "^13.2.0"
   },
   "dependencies": {
+    "@nuxt/content": "^2.5.2",
     "unstorage": "^1.0.1",
+    "vue-markdown-render": "^2.0.1",
     "vue3-simple-icons": "^7.18.0"
   }
 }
