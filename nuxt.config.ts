@@ -24,9 +24,16 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'pt-BR',
       },
+      script: [
+        {
+          src: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,500,0,0&display=swap',
+          defer: true,
+        }
+      ],
       link: [
         {
           rel: 'stylesheet',
+          type: 'text/css',
           href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,500,0,0&display=swap',
         },
         {
