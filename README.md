@@ -43,10 +43,10 @@ Projeto criado para ser meu portfólio pessoal.
 - [x] - Responsividade;
 - [x] - Home;
 - [x] - Sobre;
-- [ ] - Trabalhar no SEO;
+- [x] - Trabalhar no SEO;
 - [x] - Utilizar fontes e fontes de ícones localmente;
 - [x] - Adicionar um favicon;
-- [ ] - Adicionar um domínio;
+- [x] - Adicionar um domínio;
 - [ ] - Projetos;
 - [ ] - Blog (com CMS);
 - [ ] - Contato;
