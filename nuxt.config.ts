@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@vueuse/nuxt'],
+  modules: ['@vueuse/nuxt', '@nuxt/content'],
   vite: {
     css: {
       preprocessorOptions: {
@@ -13,6 +13,7 @@ export default defineNuxtConfig({
           @import "@/assets/scss/_reset.scss";
           @import "@/assets/scss/_transitions.scss";
           @import "@/assets/fonts/switzer/_switzer.scss";
+          @import "@/assets/fonts/jetbrains/_jetbrains-mono.scss";
           `,
         },
       },
@@ -23,9 +24,16 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'pt-BR',
       },
+      script: [
+        {
+          src: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,500,0,0&display=swap',
+          defer: true,
+        }
+      ],
       link: [
         {
           rel: 'stylesheet',
+          type: 'text/css',
           href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,500,0,0&display=swap',
         },
         {
